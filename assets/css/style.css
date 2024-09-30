@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+
+/* Fonts */
+:root {
+    --heading-font: "Space Grotesk", sans-serif;
+    --body-font: "Poppins", sans-serif;
+}
+
+
+/* Global Colors */
+:root { 
+--st-bg-color: #ffffff; 
+--st-white-color: #ffffff; 
+--default-color: #212529; 
+--heading-color: #32353a; 
+--accent-color: #e84545; 
+--surface-color: #ffffff;
+--contrast-color: #ffffff;
+--body-bg-color: #4B4B4B;
+}
+
+  /* Smooth scroll */
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--st-white-color);
+    background-color: var(--body-bg-color);
+    font-family: var(--body-font);
+}
+  
+a {
+color: var(--st-white-color);
+text-decoration: none;
+transition: 0.3s;
+}
+
+li{
+    list-style: none;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+color: var(--heading-color);
+font-family: var(--heading-font);
+}
+
+  
