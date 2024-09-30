@@ -5,26 +5,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Protfolio Details</title>
     <link rel="stylesheet" href="assets/css/bootstrap-min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <!--==== Header Area Start ====-->
-    <header class="st-header-area">
+    <header class="st-header-area position-absolute">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-xl-2">
                     <div class="st-header-logo">
                         <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
                     </div>
                 </div>
-                <div class="col-xl-7"></div>
-                <div class="col-xl-3"></div>
+                <div class="col-xl-7">
+                    <div class="st-header-menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="st-header-btn">
+                        <a href="#" class="st-btn">Learn more</a>
+                        <a href="#" class="st-btn st-btn-2 ms-3">Say Hi</a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
     <!--==== Header Area End ====-->
-    <main></main>
+    <main>
+    <!--==== Hero Area Start ====-->
+    <section class="st-hero-area position-relative">
+        <img src="assets/img/bg/hero-bg.png" class="st-hero-bg-img position-absolute" alt="">
+        <svg class="st-bg-color" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1440 457" fill="none">
+            <path d="M0 0H1440V317.5L0 457V0Z" fill="url(#paint0_linear_660_5732)"/>
+            <defs>
+              <linearGradient id="paint0_linear_660_5732" x1="-9.95454e-07" y1="295" x2="1440" y2="279" gradientUnits="userSpaceOnUse">
+                <stop stop-opacity="0.99"/>
+                <stop offset="0.759706" stop-color="#003831" stop-opacity="0.56"/>
+                <stop offset="1" stop-color="#00221E" stop-opacity="0.22"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        <div class="container">
+            <div class="row">
+                <div class="st-hero-content">
+                    <h1>Portfolio Details</h1>
+                    <ul class="pt-2">
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <path d="M9.16634 18.3333V12.8333H12.833V18.3333H17.4163V11H20.1663L10.9997 2.75L1.83301 11H4.58301V18.3333H9.16634Z" fill="white"/>
+                                </svg>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
+                                    <path d="M21.5797 16.9C19.8304 17.98 17.0064 19.0107 12.4877 19.2707L10.0477 21.2707C9.45643 21.7432 8.72194 22.0004 7.96505 22L3.56771 22C3.42779 22 3.29142 21.956 3.17791 21.8742C3.0644 21.7923 2.97951 21.6769 2.93526 21.5442C2.89101 21.4114 2.88965 21.2681 2.93137 21.1346C2.97309 21.001 3.05578 20.884 3.16771 20.8L5.16771 19.3C5.46371 19.0787 5.70105 18.74 5.92771 18.2973C6.07171 18.012 6.18371 17.7453 6.30371 17.4613L6.41438 17.2C5.84371 16.2667 5.56771 15.1333 5.56771 14C5.56771 12.8667 5.84371 11.7333 6.41438 10.8C6.37527 10.7102 6.33794 10.6222 6.30238 10.536C6.18371 10.2547 6.07171 9.988 5.92771 9.70267C5.70105 9.26 5.46371 8.92133 5.16771 8.7L3.16771 7.2C3.05578 7.11605 2.97309 6.999 2.93137 6.86545C2.88965 6.73189 2.89101 6.58859 2.93526 6.45585C2.97951 6.32311 3.0644 6.20765 3.17791 6.12584C3.29142 6.04402 3.42779 6 3.56771 6L7.96505 6C8.7221 5.99999 9.45661 6.25767 10.0477 6.73067L10.0544 6.736L12.4877 8.732C16.9184 8.99467 19.733 10.024 21.4957 11.0973C22.5184 11.7187 23.1784 12.3507 23.589 12.844C23.7971 13.0925 23.9803 13.3609 24.1357 13.6453C24.1982 13.7532 24.2322 13.8753 24.2344 14C24.2344 14.1347 24.1984 14.2267 24.149 14.3333C24.1268 14.3831 24.0935 14.4476 24.049 14.5267C23.961 14.684 23.8264 14.896 23.629 15.144C23.233 15.6413 22.5904 16.2773 21.5797 16.9ZM16.2344 16C17.7077 16 18.901 15.104 18.901 14C18.901 12.896 17.7077 12 16.2344 12C14.761 12 13.5677 12.896 13.5677 14C13.5677 15.104 14.761 16 16.2344 16Z" fill="white"/>
+                                    <path d="M4.9006 14.0003C4.9006 14.667 4.96194 15.3323 5.08594 15.9723L3.16727 14.5337C3.08447 14.4716 3.01727 14.391 2.97099 14.2985C2.9247 14.2059 2.9006 14.1038 2.9006 14.0003C2.9006 13.8968 2.9247 13.7947 2.97099 13.7022C3.01727 13.6096 3.08447 13.5291 3.16727 13.467L5.08594 12.0283C4.96194 12.6683 4.9006 13.335 4.9006 14.0003Z" fill="white"/>
+                                  </svg>
+                                  Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
+                                <path d="M21.5797 16.9C19.8304 17.98 17.0064 19.0107 12.4877 19.2707L10.0477 21.2707C9.45643 21.7432 8.72194 22.0004 7.96505 22L3.56771 22C3.42779 22 3.29142 21.956 3.17791 21.8742C3.0644 21.7923 2.97951 21.6769 2.93526 21.5442C2.89101 21.4114 2.88965 21.2681 2.93137 21.1346C2.97309 21.001 3.05578 20.884 3.16771 20.8L5.16771 19.3C5.46371 19.0787 5.70105 18.74 5.92771 18.2973C6.07171 18.012 6.18371 17.7453 6.30371 17.4613L6.41438 17.2C5.84371 16.2667 5.56771 15.1333 5.56771 14C5.56771 12.8667 5.84371 11.7333 6.41438 10.8C6.37527 10.7102 6.33794 10.6222 6.30238 10.536C6.18371 10.2547 6.07171 9.988 5.92771 9.70267C5.70105 9.26 5.46371 8.92133 5.16771 8.7L3.16771 7.2C3.05578 7.11605 2.97309 6.999 2.93137 6.86545C2.88965 6.73189 2.89101 6.58859 2.93526 6.45585C2.97951 6.32311 3.0644 6.20765 3.17791 6.12584C3.29142 6.04402 3.42779 6 3.56771 6L7.96505 6C8.7221 5.99999 9.45661 6.25767 10.0477 6.73067L10.0544 6.736L12.4877 8.732C16.9184 8.99467 19.733 10.024 21.4957 11.0973C22.5184 11.7187 23.1784 12.3507 23.589 12.844C23.7971 13.0925 23.9803 13.3609 24.1357 13.6453C24.1982 13.7532 24.2322 13.8753 24.2344 14C24.2344 14.1347 24.1984 14.2267 24.149 14.3333C24.1268 14.3831 24.0935 14.4476 24.049 14.5267C23.961 14.684 23.8264 14.896 23.629 15.144C23.233 15.6413 22.5904 16.2773 21.5797 16.9ZM16.2344 16C17.7077 16 18.901 15.104 18.901 14C18.901 12.896 17.7077 12 16.2344 12C14.761 12 13.5677 12.896 13.5677 14C13.5677 15.104 14.761 16 16.2344 16Z" fill="white"/>
+                                <path d="M4.9006 14.0003C4.9006 14.667 4.96194 15.3323 5.08594 15.9723L3.16727 14.5337C3.08447 14.4716 3.01727 14.391 2.97099 14.2985C2.9247 14.2059 2.9006 14.1038 2.9006 14.0003C2.9006 13.8968 2.9247 13.7947 2.97099 13.7022C3.01727 13.6096 3.08447 13.5291 3.16727 13.467L5.08594 12.0283C4.96194 12.6683 4.9006 13.335 4.9006 14.0003Z" fill="white"/>
+                              </svg>
+                              Road Tracker IOS Application
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==== Hero Area End ====-->
+
+    <!--==== About Area Start ====-->
+    <div class="st-about-area position-relative">
+        <img src="assets/img/icon/wordpress-icon 1.png" class="position-absolute st-about-icon" alt="">
+        <div class="container">
+            <div class="st-about-content">
+                <h2>Road Tracker IOS Application</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt labore dolore consequat.Lorem ipsum dolor sit amet, consectetur <br>  aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+    <!--==== About Area End ====-->
+
+    <!--==== Video Area Start ====-->
+    <div class="st-video-area">
+        <div class="container">
+            <div class="st-video-content">
+                <a href="https://www.youtube.com/watch?v=meqpZHITXzY" class="popup-video"><img src="assets/img/icon/v.icon.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <!--==== Video Area End ====-->
+
+    <!--==== Service Area Start ====-->
+    <section class="st-service-area position-relative">
+        <img src="assets/img/icon/js-icon.png" class="position-absolute st-service-icon1" alt="">
+        <img src="assets/img/icon/React.png" class="position-absolute st-service-icon2" alt="">
+        <div class="container">
+            <h2 class="st-section-title">mobile application design</h2>
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="st-service-item d-flex align-items-center">
+                        <div class="st-service-icon">
+                            <img src="assets/img/icon/service-icon2.png" alt="">
+                        </div>
+                        <div class="st-service-info">
+                            <h5>Services</h5>
+                            <h3>Design,branding <br> app,development</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="st-service-item d-flex align-items-center">
+                        <div class="st-service-icon">
+                            <img src="assets/img/icon/service-icon1.png" alt="">
+                        </div>
+                        <div class="st-service-info">
+                            <h5>Client</h5>
+                            <h3>Microsoft Apps Holing Ltd, <br> Australia Area</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="st-service-item d-flex align-items-center">
+                        <div class="st-service-icon">
+                            <img src="assets/img/icon/service-icon3.png" alt="">
+                        </div>
+                        <div class="st-service-info">
+                            <h5>Date</h5>
+                            <h3>Start: 29 April, 2023 & <br> End: 15 July, 2023</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-9">
+                <div class="st-service-description">
+                    <h2 class="st-section-title">mobile application design</h2>
+                    <p>Mobile application design is the process of creating a user-friendly and visually appealing interface for a mobile application. A well-designed mobile app can increase user engagement and satisfaction, resulting in higher usage and better retention rates. Mobile application design typically involves creating wireframes, prototypes, and visual designs that showcase the app’s features and functionality. This includes designing intuitive navigation, visually appealing graphics, and clear calls-to-action. Mobile application design also considers the unique constraints of mobile devices, such as screen size and orientation, and ensures that the app is optimized for performance and usability. In order to create an effective mobile application design, it is important to conduct user research, gather feedback, and iterate on designs to ensure that the app meets the needs of the target audience.</p>
+                </div>
+            </div>
+            <div class="col-xl-9">
+                <div class="st-service-description st-service-description-2">
+                    <h2 class="st-section-title">the challenges of project</h2>
+                    <p>After wireframes have been tested and refined, the design team will typically move on to creating high-fidelity prototypes and visual designs. This involves creating visual designs that showcase the app’s features, functionality, and branding. The visual design of the app will typically include typography, color schemes, graphics, and other visual elements that are consistent with the app’s brand.</p>
+                </div>
+            </div>
+            <div class="row st-service-img-gropu">
+                <div class="col-xl-6">
+                    <img src="assets/img/service/service1.jpg" class="st-service-img" alt="">
+                </div>
+                <div class="col-xl-6">
+                    <img src="assets/img/service/service2.jpg" class="st-service-img" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==== Service Area End ====-->
+    </main>
     <footer></footer>
     <script src="assets/js/bootstrap-min.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
