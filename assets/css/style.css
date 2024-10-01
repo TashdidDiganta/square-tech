@@ -418,7 +418,12 @@ p {
 
 /* Contact Btn Style Start */
 .st-contact-btn-area{
+    padding-top: 120px;
     padding-bottom: 115px;
+    .st-contact-btn-icon{
+        left: calc(12% - 22px);
+        top: 40%;
+    }
     h3{
         font-size: 24px;
         margin-bottom: 32px;
@@ -444,6 +449,10 @@ p {
 /* Contact Form Style Start */
 .st-contact-form-area{
     padding-bottom: 115px;
+    .st-contact-form-icon{
+        right: 63px;
+        bottom: 10%;
+    }
     h2{
         font-size: 36px;
         font-weight: 700;
