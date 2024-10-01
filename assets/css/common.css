@@ -1,0 +1,28 @@
+
+
+.st-pagination{
+    margin-top: 65px;
+    ul{
+        li{
+            a{
+                font-size: 18px;
+                transition: all 500ms;
+                font-weight: 500;
+                margin-right: 10px;
+                border-radius: 4.556px;
+                padding: 5px 10px 4px 11px;
+                border: 0.569px solid #C0FFF8;
+            }
+            a:hover{
+                border-radius: 4.556px;
+                border: 0.569px solid #C0FFF8;
+                background: linear-gradient(84deg, #1C6E60 30.4%, #020807 100%);
+            }        
+            a.active{
+                border-radius: 4.556px;
+                border: 0.569px solid #C0FFF8;
+                background: linear-gradient(84deg, #1C6E60 30.4%, #020807 100%);
+            }
+        }
+    }
+}
