@@ -52,7 +52,7 @@ h6 {
     font-family: var(--heading-font);
 }
 
-h4{
+h4 {
     font-size: 16px;
 }
 
@@ -101,19 +101,22 @@ p {
     right: 0;
     top: 65px;
     z-index: 3;
-    .st-header-logo{
+
+    .st-header-logo {
         display: inline-block;
     }
-    .st-nav-menu{
+
+    .st-nav-menu {
         outline: none;
         border: none;
-        svg{
+
+        svg {
             color: #fff;
         }
     }
 }
 
-.st-close-btn{
+.st-close-btn {
     color: var(--st-white);
 }
 
@@ -121,13 +124,15 @@ p {
 
 
 /* Offcanvst Style Start */
-.st-offcanvas-area{
+.st-offcanvas-area {
     background-color: var(--body-bg-color);
-    .st-offcanvas-body{
+
+    .st-offcanvas-body {
         position: relative;
+
         .st-header-menu {
             margin-left: 20px;
-    
+
             nav {
                 ul {
                     li {
@@ -142,12 +147,14 @@ p {
                 }
             }
         }
+
         .st-header-btn {
             position: absolute;
             bottom: 50px;
         }
     }
 }
+
 /* Offcanvst Style End */
 
 
@@ -197,14 +204,17 @@ p {
 /* About Style Start */
 .st-about-area {
     padding-top: 48px;
+
     .st-about-icon {
         top: 140px;
         left: 214px;
     }
-    .st-portfolio__icon1{
+
+    .st-portfolio__icon1 {
         top: 25px;
         left: 215px;
     }
+
     .st-about-content {
         border-radius: 16px;
         border: 2px solid #3B3E3E;
@@ -212,6 +222,7 @@ p {
         box-shadow: 0px 12px 46px 0px rgba(0, 166, 147, 0.12);
         text-align: center;
         padding: 77px 0px 57px 0px;
+
         h2 {
             font-size: 50px;
             font-weight: 700;
@@ -226,6 +237,7 @@ p {
 /* Video Style Start */
 .st-video-area {
     padding-top: 122px;
+
     .st-video-content {
         border-radius: 16px;
         text-align: center;
@@ -240,20 +252,24 @@ p {
 /* Service Style Start */
 .st-service-area {
     padding-top: 100px;
+
     .st-service-icon1 {
         right: 16%;
         top: 23%;
     }
+
     .st-service-icon2 {
         left: calc(14% - 48px);
         bottom: 13%;
     }
+
     .st-service-item {
         border-radius: 16px;
         border: 2px solid #464444;
         padding: 23px 10px 27px 34px;
         box-shadow: 0px 12px 24px 0px rgba(0, 166, 147, 0.12);
         background: linear-gradient(84deg, #1C6E60 30.4%, #020807 100%);
+
         .st-service-icon {
             padding: 15px;
             border-radius: 8px;
@@ -261,12 +277,14 @@ p {
             border: 1px solid #C0FFF8;
             background: linear-gradient(84deg, #1C6E60 30.4%, #020807 100%);
         }
-        .st-service-info{
+
+        .st-service-info {
             h5 {
                 font-size: 12px;
                 margin-bottom: 14px;
                 color: rgba(255, 255, 255, 0.70);
             }
+
             h3 {
                 margin: 0;
                 font-size: 16px;
@@ -275,19 +293,24 @@ p {
             }
         }
     }
+
     .st-service-description {
         padding-top: 75px;
+
         p {
             margin-top: 20px;
             padding-right: 122px;
         }
     }
+
     .st-service-description-2 {
         padding-top: 50px;
     }
+
     .st-service-img-group {
         margin-top: 50px;
         margin-bottom: 100px;
+
         .st-service-img {
             width: 100%;
         }
@@ -298,33 +321,39 @@ p {
 
 /* Portfolio Style Start */
 
-.st-portfolio-area{
+.st-portfolio-area {
     padding-top: 120px;
     padding-bottom: 100px;
-    .st-portfolio-icon1{
+
+    .st-portfolio-icon1 {
         right: 10%;
         bottom: 41%;
     }
-    .st-portfolio__img{
-        img{
+
+    .st-portfolio__img {
+        img {
             width: 100%;
             height: 370px;
             border-radius: 8px;
         }
     }
-    .st-portfolio__info{
+
+    .st-portfolio__info {
         border-radius: 8px;
         border: 2px solid #3E3D3D;
         padding: 41px 40px 60px 40px;
-        h2{
+
+        h2 {
             font-size: 32px;
             font-weight: 500;
-            line-height: 140%; /* 44.8px */
+            line-height: 140%;
+            /* 44.8px */
             margin-bottom: 15px;
             color: var(--st-white);
             text-transform: capitalize;
         }
-        p{
+
+        p {
             font-size: 16px;
             font-weight: 400;
             margin-bottom: 45px;
@@ -335,20 +364,177 @@ p {
 
 /* Portfolio Style End */
 
+/* Contact Style Start */
 
+.st-contact-p{
+    padding-bottom: 40px;
+}
+.st-contact__icon1 {
+    right: 15%;
+    top: -100px;
+}
+.st-contact__info {
+    z-index: 1;
+    margin-top: -36px;
+    position: relative;
 
+    .st-contact__item {
+        border-radius: 16px;
+        border: 2px solid #464444;
+        padding: 23px 10px 27px 34px;
+        box-shadow: 0px 12px 24px 0px rgba(0, 166, 147, 0.12);
+        background: linear-gradient(84deg, #1C6E60 30.4%, #020807 100%);
+
+        .st-contact__item-icon {
+            margin-right: 8px;
+            padding: 16px 17px;
+            border-radius: 8px;
+            border: 1px solid #C0FFF8;
+            background: linear-gradient(84deg, #1C6E60 30.4%, #020807 100%);
+        }
+
+        .st-contact__item-desc {
+            h5 {
+                font-size: 16px;
+                margin-bottom: 10px;
+                color: var(--st-bg-color);
+            }
+
+            span {
+                display: block;
+                font-size: 12px;
+                font-weight: 500;
+                margin-bottom: 4px;
+                line-height: 150%;
+                /* 18px */
+                font-family: "Space Grotesk";
+                color: rgba(255, 255, 255, 0.70);
+            }
+        }
+    }
+}
+
+/* Contact Style End */
+
+/* Contact Btn Style Start */
+.st-contact-btn-area{
+    padding-bottom: 115px;
+    h3{
+        font-size: 24px;
+        margin-bottom: 32px;
+        color: var(--st-white);
+    }
+    .st-contact-btn{
+        display: flex;
+        padding: 0;
+        width: 100%;
+        height: 60px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #3E3D3D;
+        transition: .3s;
+    }
+    .st-contact-btn:hover{
+        background: linear-gradient(210deg, #020807 28.88%, #1C6E60 97.94%);
+    }
+}
+/* Contact Btn Style End */
+
+/* Contact Form Style Start */
+.st-contact-form-area{
+    padding-bottom: 115px;
+    h2{
+        font-size: 36px;
+        font-weight: 700;
+        color: var(--st-white);
+    }
+    p{
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 120%; /* 12px */
+        margin-bottom: 40px;
+        margin-top: 12px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.40);
+    }
+    .st-contact-form{
+        input{
+            padding: 16px 348px 17px 20px;
+            background: transparent;
+            border-radius: 8px;
+            /* border: 2px solid #C0FFF8; */
+            color: #fff;
+        }
+        ::placeholder{
+            color: #fff;
+        }
+        textarea{
+            padding: 15px;
+            background:linear-gradient(180.86deg, #020807 28.88%, #1C6E60 97.94%);
+        }
+    
+        .contact{
+            font-size: 14px;
+            padding: 10px 15px;
+            box-shadow: none;
+            border-radius: 0;
+            color: var(--default-color);
+            background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+            border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+        }
+    }
+}
+
+/* Contact Form Style End */
+
+/* Subscribe Style End */
+.st-subscribe{
+    padding-bottom: 100px;
+    .st-subscribe__content-box{
+        position: relative;
+        border-radius: 16px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 2px solid #00A693;
+        overflow: hidden;
+        background-image: url('../img/bg/subscribe-bg.png');
+        .st-subscribe__content{
+            padding: 72px 0px 75px 0px;
+            h2{
+                font-size: 48px;
+                font-weight: 700;
+                margin-bottom: 50px;
+                color: var(--st-white);
+            }
+        }
+    }
+
+    .st-subscribe__content-box::before {
+        content: "";
+        width: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(2, 8, 7, 0.70);
+    }
+}
+/* Subscribe Style End */
 
 
 /* Footer Style Start */
-.st-footer-area{
+.st-footer-area {
     /* padding-top: 35px; */
     position: relative;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('../img/bg/footer-bg.png');
- 
-    .st-footer__info{
+
+    .st-footer__info {
         z-index: 2;
         margin-top: 35px;
         padding: 33px 0px;
@@ -356,83 +542,101 @@ p {
         border-radius: 16px;
         border: 2px solid var(--st-white);
         background: linear-gradient(84deg, #1C6E60 30.4%, #020807 100%);
-        .st-footer__item{
-            .st-footer__item-icon{
+
+        .st-footer__item {
+            .st-footer__item-icon {
                 margin-right: 8px;
                 padding: 16px 17px;
                 border-radius: 8px;
                 border: 1px solid #C0FFF8;
                 background: linear-gradient(84deg, #1C6E60 30.4%, #020807 100%);
             }
-            .st-footer__item-desc{
-                h5{
+
+            .st-footer__item-desc {
+                h5 {
                     font-size: 16px;
                     margin-bottom: 10px;
                     color: var(--st-bg-color);
                 }
-                span{
+
+                span {
                     display: block;
                     font-size: 12px;
                     font-weight: 500;
                     margin-bottom: 4px;
-                    line-height: 150%; /* 18px */
+                    line-height: 150%;
+                    /* 18px */
                     font-family: "Space Grotesk";
                     color: rgba(255, 255, 255, 0.70);
                 }
             }
         }
     }
-    .st-footer-list{
+
+    .st-footer-list {
         padding-bottom: 50px;
-        .st-footer-logo{
+
+        .st-footer-logo {
             margin-bottom: 15px;
         }
-        .st-logo-info{
+
+        .st-logo-info {
             font-size: 12px;
             font-weight: 400;
         }
-        .st-footer-socials{
+
+        .st-footer-socials {
             margin-top: 20px;
-            a{
+
+            a {
                 margin-right: 5px;
             }
         }
-        .st-footer-widget{
-            h4{
+
+        .st-footer-widget {
+            h4 {
                 font-weight: 500;
                 color: var(--st-white);
                 margin-bottom: 20px;
             }
-            ul{
-                li{
+
+            ul {
+                li {
                     display: block;
                     margin-bottom: 17px;
                 }
             }
         }
-        .st-footer-widget-1{
+
+        .st-footer-widget-1 {
             padding-left: 30px;
         }
-        .st-footer-widget-2{
+
+        .st-footer-widget-2 {
             padding-left: 22px;
         }
-        .st-footer-widget-4{
+
+        .st-footer-widget-4 {
             padding-left: 45px;
-            ul{
-                li{
+
+            ul {
+                li {
                     display: inline-block;
                 }
             }
         }
     }
-    .st-copyright-area{
+
+    .st-copyright-area {
         padding: 24px 0px 32px 0px;
         border-top: 1px solid rgba(0, 166, 147, 0.46);
-        span{
+
+        span {
             font-size: 14px;
         }
-        ul{
-            li{
+
+        ul {
+            li {
                 font-size: 14px;
                 margin-right: 10px;
             }
@@ -440,11 +644,11 @@ p {
     }
 }
 
-.pt{
+.pt {
     padding-top: 35px;
 }
 
-.st-footer-area::before{
+.st-footer-area::before {
     content: "";
     width: 100%;
     position: absolute;
@@ -452,5 +656,5 @@ p {
     height: 100%;
     background-color: rgba(2, 8, 7, 0.70);
 }
-/* Footer Style End */
 
+/* Footer Style End */
