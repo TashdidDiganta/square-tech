@@ -101,24 +101,54 @@ p {
     right: 0;
     top: 65px;
     z-index: 3;
-
-    .st-header-menu {
-        margin-left: 20px;
-
-        nav {
-            ul {
-                li {
-                    font-size: 18px;
-                    font-weight: 500;
-                    padding-right: 48px;
-                    color: var(--st-white);
-                }
-            }
+    .st-header-logo{
+        display: inline-block;
+    }
+    .st-nav-menu{
+        outline: none;
+        border: none;
+        svg{
+            color: #fff;
         }
     }
 }
 
+.st-close-btn{
+    color: var(--st-white);
+}
+
 /* Header Stayle End */
+
+
+/* Offcanvst Style Start */
+.st-offcanvas-area{
+    background-color: var(--body-bg-color);
+    .st-offcanvas-body{
+        position: relative;
+        .st-header-menu {
+            margin-left: 20px;
+    
+            nav {
+                ul {
+                    li {
+                        display: block;
+                        font-size: 18px;
+                        font-weight: 500;
+                        padding: 7px 0px;
+                        padding-right: 48px;
+                        color: var(--st-white);
+                        border-bottom: 1px solid #ffff;
+                    }
+                }
+            }
+        }
+        .st-header-btn {
+            position: absolute;
+            bottom: 50px;
+        }
+    }
+}
+/* Offcanvst Style End */
 
 
 /* Hero Style Start */
@@ -134,7 +164,6 @@ p {
         display: block;
         width: 100%;
         object-fit: cover;
-        z-index: 1;
     }
 
     .st-hero-content {
@@ -266,9 +295,16 @@ p {
 /* Footer Style Start */
 
 .st-footer-area{
-    padding-top: 35px;
+    /* padding-top: 35px; */
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-image: url('../img/bg/footer-bg.png');
+ 
     .st-footer__info{
+        z-index: 2;
+        margin-top: 35px;
         padding: 33px 0px;
         margin-bottom: 50px;
         border-radius: 16px;
@@ -334,6 +370,40 @@ p {
         .st-footer-widget-2{
             padding-left: 22px;
         }
+        .st-footer-widget-4{
+            padding-left: 45px;
+            ul{
+                li{
+                    display: inline-block;
+                }
+            }
+        }
     }
+    .st-copyright-area{
+        padding: 24px 0px 32px 0px;
+        border-top: 1px solid rgba(0, 166, 147, 0.46);
+        span{
+            font-size: 14px;
+        }
+        ul{
+            li{
+                font-size: 14px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.pt{
+    padding-top: 35px;
+}
+
+.st-footer-area::before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    background-color: rgba(2, 8, 7, 0.70);
 }
 /* Footer Style End */

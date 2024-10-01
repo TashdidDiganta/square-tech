@@ -12,33 +12,45 @@
     <!--==== Header Area Start ====-->
     <header class="st-header-area position-absolute">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-2">
-                    <div class="st-header-logo">
-                        <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
-                    </div>
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="st-header-logo">
+                    <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
                 </div>
-                <div class="col-xl-7">
-                    <div class="st-header-menu">
-                        <nav>
-                            <ul>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Portfolio</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <div class="col-xl-3">
-                    <div class="st-header-btn">
-                        <a href="#" class="st-btn">Learn more</a>
-                        <a href="#" class="st-btn st-btn-2 ms-3">Say Hi</a>
-                    </div>
+                <div class="d-inline-block">
+                    <button class="btn st-nav-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
     </header>
+    <!-- offcanvs -->
+
+
+    <div class="offcanvas offcanvas-end st-offcanvas-area" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title ms-3" id="offcanvasRightLabel"><a href="#"><img src="assets/img/logo/logo-white.png" alt=""></a></h5>
+        <button type="button" class="btn-close st-close-btn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body st-offcanvas-body">
+        <div class="st-header-menu">
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="st-header-btn ms-3">
+            <a href="#" class="st-btn">Learn more</a>
+            <a href="#" class="st-btn st-btn-2 ms-3">Say Hi</a>
+        </div>
+      </div>
+    </div>
     <!--==== Header Area End ====-->
     <main>
     <!--==== Hero Area Start ====-->
@@ -179,8 +191,8 @@
 
     <!--==== Footer Area Start ====-->
     <footer class="st-footer-area">
-
-        <div class="container">
+        <div class="pt"></div>
+        <div class="container position-relative z-1">
             <div class="st-footer__info">
                 <div class="row">
                     <div class="col-xl-4 d-flex justify-content-center">
@@ -192,8 +204,8 @@
                             </div>
                             <div class="st-footer__item-desc">
                                 <h5>Phone number</h5>
-                                <span>01892736447</span> 
-                                <span>01892736447</span>
+                                <span><a href="tel:1892736447">01892736447</a></span> 
+                                <span><a href="tel:1892736447">01892736447</a></span>
                             </div>
                         </div>
                     </div>
@@ -206,8 +218,8 @@
                             </div>
                             <div class="st-footer__item-desc">
                                 <h5>Email us here</h5>
-                                <span>info@gmail.com</span> 
-                                <span>info2@gmail.com</span>
+                                <span><a href="mailto:info@gmail.com">info@gmail.com</a></span> 
+                                <span><a href="mailto:info2@gmail.com">info2@gmail.com</a></span>
                             </div>
                         </div>
                     </div>
@@ -215,8 +227,8 @@
                         <div class="st-footer__item d-flex align-items-center">
                             <div class="st-footer__item-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                                    <path d="M33.35 25.6333C31.3 25.6333 29.3167 25.3 27.4667 24.7C27.1768 24.6018 26.8652 24.5872 26.5675 24.6579C26.2697 24.7287 25.998 24.8819 25.7833 25.1L23.1667 28.3833C18.45 26.1333 14.0333 21.8833 11.6833 17L14.9333 14.2333C15.3833 13.7667 15.5167 13.1167 15.3333 12.5333C14.7167 10.6833 14.4 8.7 14.4 6.65C14.4 5.75 13.65 5 12.75 5H6.98333C6.08333 5 5 5.4 5 6.65C5 22.1333 17.8833 35 33.35 35C34.5333 35 35 33.95 35 33.0333V27.2833C35 26.3833 34.25 25.6333 33.35 25.6333Z" fill="white"/>
-                                  </svg>
+                                    <path d="M19.9997 19.1663C18.8946 19.1663 17.8348 18.7274 17.0534 17.946C16.272 17.1646 15.833 16.1047 15.833 14.9997C15.833 13.8946 16.272 12.8348 17.0534 12.0534C17.8348 11.272 18.8946 10.833 19.9997 10.833C21.1047 10.833 22.1646 11.272 22.946 12.0534C23.7274 12.8348 24.1663 13.8946 24.1663 14.9997C24.1663 15.5468 24.0586 16.0887 23.8492 16.5942C23.6398 17.0997 23.3329 17.559 22.946 17.946C22.559 18.3329 22.0997 18.6398 21.5942 18.8492C21.0887 19.0586 20.5469 19.1663 19.9997 19.1663ZM19.9997 3.33301C16.9055 3.33301 13.938 4.56217 11.7501 6.7501C9.56217 8.93802 8.33301 11.9055 8.33301 14.9997C8.33301 23.7497 19.9997 36.6663 19.9997 36.6663C19.9997 36.6663 31.6663 23.7497 31.6663 14.9997C31.6663 11.9055 30.4372 8.93802 28.2493 6.7501C26.0613 4.56217 23.0939 3.33301 19.9997 3.33301Z" fill="white"/>
+                                </svg>
                             </div>
                             <div class="st-footer__item-desc">
                                 <h5>Office address</h5>
@@ -272,7 +284,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-xl-4">
                     <div class="st-footer-widget st-footer-widget-2">
                         <h4>What we do</h4>
                         <ul>
@@ -283,17 +295,27 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-4">
-                    <div class="st-footer-widget st-footer-widget-2">
+                <div class="col-xl-3">
+                    <div class="st-footer-widget st-footer-widget-4">
                         <h4>Instagram Posts</h4>
                         <ul>
-                            <li><a href="#">UI/UX design & development</a></li>
-                            <li><a href="#">App design & development</a></li>
-                            <li><a href="#">Cyber security</a></li>
-                            <li><a href="#">IT consultant</a></li>
+                            <li><a href="#"><img src="assets/img/inst/inst1.png" alt=""></a></li>
+                            <li><a href="#"><img src="assets/img/inst/inst2.png" alt=""></a></li>
+                            <li><a href="#"><img src="assets/img/inst/inst3.png" alt=""></a></li>
+                            <li><a href="#"><img src="assets/img/inst/inst4.png" alt=""></a></li>
+                            <li><a href="#"><img src="assets/img/inst/inst5.png" alt=""></a></li>
+                            <li><a href="#"><img src="assets/img/inst/inst6.png" alt=""></a></li>
                         </ul>
                     </div>
                 </div>
+            </div>
+            <div class="st-copyright-area d-flex justify-content-between align-items-center">
+                <span>2024 @All right reserved Square Tech IT.</span>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
             </div>
         </div>
     </footer>
