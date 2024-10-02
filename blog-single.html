@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Details</title>
+    <link rel="stylesheet" href="assets/css/bootstrap-min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!--==== Header Area Start ====-->
+    <header class="st-header-area position-absolute">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="st-header-logo">
+                    <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                </div>
+                <div class="d-inline-block">
+                    <button class="btn st-nav-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- offcanvs -->
+    <div class="offcanvas offcanvas-end st-offcanvas-area" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title ms-3" id="offcanvasRightLabel"><a href="#"><img src="assets/img/logo/logo-white.png" alt=""></a></h5>
+        <button type="button" class="btn-close st-close-btn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body st-offcanvas-body">
+        <div class="st-header-menu">
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="st-header-btn ms-3">
+            <a href="#" class="st-btn">Learn more</a>
+            <a href="#" class="st-btn st-btn-2 ms-3">Say Hi</a>
+        </div>
+      </div>
+    </div>
+    <!--==== Header Area End ====-->
+    <main>
+    <!--==== Hero Area Start ====-->
+    <section class="st-hero-area position-relative">
+        <img src="assets/img/bg/hero-bg.png" class="st-hero-bg-img position-absolute" alt="">
+        <svg class="st-bg-color" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1440 457" fill="none">
+            <path d="M0 0H1440V317.5L0 457V0Z" fill="url(#paint0_linear_660_5732)"/>
+            <defs>
+              <linearGradient id="paint0_linear_660_5732" x1="-9.95454e-07" y1="295" x2="1440" y2="279" gradientUnits="userSpaceOnUse">
+                <stop stop-opacity="0.99"/>
+                <stop offset="0.759706" stop-color="#003831" stop-opacity="0.56"/>
+                <stop offset="1" stop-color="#00221E" stop-opacity="0.22"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        <div class="container">
+            <div class="row">
+                <div class="st-hero-content">
+                    <h1>Blog Details</h1>
+                    <ul class="pt-2">
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <path d="M9.16634 18.3333V12.8333H12.833V18.3333H17.4163V11H20.1663L10.9997 2.75L1.83301 11H4.58301V18.3333H9.16634Z" fill="white"/>
+                                </svg>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
+                                    <path d="M21.5797 16.9C19.8304 17.98 17.0064 19.0107 12.4877 19.2707L10.0477 21.2707C9.45643 21.7432 8.72194 22.0004 7.96505 22L3.56771 22C3.42779 22 3.29142 21.956 3.17791 21.8742C3.0644 21.7923 2.97951 21.6769 2.93526 21.5442C2.89101 21.4114 2.88965 21.2681 2.93137 21.1346C2.97309 21.001 3.05578 20.884 3.16771 20.8L5.16771 19.3C5.46371 19.0787 5.70105 18.74 5.92771 18.2973C6.07171 18.012 6.18371 17.7453 6.30371 17.4613L6.41438 17.2C5.84371 16.2667 5.56771 15.1333 5.56771 14C5.56771 12.8667 5.84371 11.7333 6.41438 10.8C6.37527 10.7102 6.33794 10.6222 6.30238 10.536C6.18371 10.2547 6.07171 9.988 5.92771 9.70267C5.70105 9.26 5.46371 8.92133 5.16771 8.7L3.16771 7.2C3.05578 7.11605 2.97309 6.999 2.93137 6.86545C2.88965 6.73189 2.89101 6.58859 2.93526 6.45585C2.97951 6.32311 3.0644 6.20765 3.17791 6.12584C3.29142 6.04402 3.42779 6 3.56771 6L7.96505 6C8.7221 5.99999 9.45661 6.25767 10.0477 6.73067L10.0544 6.736L12.4877 8.732C16.9184 8.99467 19.733 10.024 21.4957 11.0973C22.5184 11.7187 23.1784 12.3507 23.589 12.844C23.7971 13.0925 23.9803 13.3609 24.1357 13.6453C24.1982 13.7532 24.2322 13.8753 24.2344 14C24.2344 14.1347 24.1984 14.2267 24.149 14.3333C24.1268 14.3831 24.0935 14.4476 24.049 14.5267C23.961 14.684 23.8264 14.896 23.629 15.144C23.233 15.6413 22.5904 16.2773 21.5797 16.9ZM16.2344 16C17.7077 16 18.901 15.104 18.901 14C18.901 12.896 17.7077 12 16.2344 12C14.761 12 13.5677 12.896 13.5677 14C13.5677 15.104 14.761 16 16.2344 16Z" fill="white"/>
+                                    <path d="M4.9006 14.0003C4.9006 14.667 4.96194 15.3323 5.08594 15.9723L3.16727 14.5337C3.08447 14.4716 3.01727 14.391 2.97099 14.2985C2.9247 14.2059 2.9006 14.1038 2.9006 14.0003C2.9006 13.8968 2.9247 13.7947 2.97099 13.7022C3.01727 13.6096 3.08447 13.5291 3.16727 13.467L5.08594 12.0283C4.96194 12.6683 4.9006 13.335 4.9006 14.0003Z" fill="white"/>
+                                  </svg>
+                                  Blog
+                            </a>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
+                                <path d="M21.5797 16.9C19.8304 17.98 17.0064 19.0107 12.4877 19.2707L10.0477 21.2707C9.45643 21.7432 8.72194 22.0004 7.96505 22L3.56771 22C3.42779 22 3.29142 21.956 3.17791 21.8742C3.0644 21.7923 2.97951 21.6769 2.93526 21.5442C2.89101 21.4114 2.88965 21.2681 2.93137 21.1346C2.97309 21.001 3.05578 20.884 3.16771 20.8L5.16771 19.3C5.46371 19.0787 5.70105 18.74 5.92771 18.2973C6.07171 18.012 6.18371 17.7453 6.30371 17.4613L6.41438 17.2C5.84371 16.2667 5.56771 15.1333 5.56771 14C5.56771 12.8667 5.84371 11.7333 6.41438 10.8C6.37527 10.7102 6.33794 10.6222 6.30238 10.536C6.18371 10.2547 6.07171 9.988 5.92771 9.70267C5.70105 9.26 5.46371 8.92133 5.16771 8.7L3.16771 7.2C3.05578 7.11605 2.97309 6.999 2.93137 6.86545C2.88965 6.73189 2.89101 6.58859 2.93526 6.45585C2.97951 6.32311 3.0644 6.20765 3.17791 6.12584C3.29142 6.04402 3.42779 6 3.56771 6L7.96505 6C8.7221 5.99999 9.45661 6.25767 10.0477 6.73067L10.0544 6.736L12.4877 8.732C16.9184 8.99467 19.733 10.024 21.4957 11.0973C22.5184 11.7187 23.1784 12.3507 23.589 12.844C23.7971 13.0925 23.9803 13.3609 24.1357 13.6453C24.1982 13.7532 24.2322 13.8753 24.2344 14C24.2344 14.1347 24.1984 14.2267 24.149 14.3333C24.1268 14.3831 24.0935 14.4476 24.049 14.5267C23.961 14.684 23.8264 14.896 23.629 15.144C23.233 15.6413 22.5904 16.2773 21.5797 16.9ZM16.2344 16C17.7077 16 18.901 15.104 18.901 14C18.901 12.896 17.7077 12 16.2344 12C14.761 12 13.5677 12.896 13.5677 14C13.5677 15.104 14.761 16 16.2344 16Z" fill="white"/>
+                                <path d="M4.9006 14.0003C4.9006 14.667 4.96194 15.3323 5.08594 15.9723L3.16727 14.5337C3.08447 14.4716 3.01727 14.391 2.97099 14.2985C2.9247 14.2059 2.9006 14.1038 2.9006 14.0003C2.9006 13.8968 2.9247 13.7947 2.97099 13.7022C3.01727 13.6096 3.08447 13.5291 3.16727 13.467L5.08594 12.0283C4.96194 12.6683 4.9006 13.335 4.9006 14.0003Z" fill="white"/>
+                              </svg>
+                              NextJs Website Pros & Crons During Development
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==== Hero Area End ====-->
+
+    <!--==== About Area Start ====-->
+    <div class="st-about-area position-relative">
+        <img src="assets/img/icon/data.png" class="position-absolute st-blog__icon1" alt="">
+        <div class="container">
+            <div class="st-about-content st-about-content-2">
+                <h2>NextJs Website Pros & Crons <br> During Development</h2>
+                <p class="st-contact-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt labore dolore consequat.Lorem ipsum dolor sit amet, consectetur <br>  aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+    <!--==== About Area End ====-->
+
+    <!--==== Blog Area Start ====-->
+    <section class="st-blog-area position-relative">
+        <img src="assets/img/icon/react.png" class="st-blog-icon position-absolute" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8">
+                    <div class="st-blog-content position-relative">
+                        <div class="st-blog-img position-relative">
+                            <img src="assets/img/bg/blog-bg.png" class="img" alt="">
+                        </div>
+                        <div class="st-blog-date">
+                            <h4>21 February 2023</h4>
+                        </div>
+                        <div class="st-blog-title-box text-center">
+                            <h3>Learn how predictive analytics <br> can drive business growth</h3>
+                            <div class="st-comment-count">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M2.83333 11.5399C2.75261 11.5413 2.67276 11.5232 2.6006 11.487C2.52844 11.4508 2.46611 11.3977 2.41894 11.3322C2.37177 11.2667 2.34117 11.1907 2.32974 11.1108C2.31831 11.0309 2.32641 10.9494 2.35333 10.8733L3.18666 8.1266C3.01624 7.65841 2.92609 7.16481 2.92 6.6666C2.91868 6.09154 3.03436 5.52222 3.26 4.99327C3.53352 4.34183 3.96265 3.76742 4.50978 3.32038C5.05691 2.87334 5.70534 2.56731 6.39823 2.42913C7.09112 2.29095 7.80733 2.32482 8.48409 2.52778C9.16085 2.73074 9.7775 3.09659 10.28 3.59327C10.6699 3.98942 10.982 4.45527 11.2 4.9666C11.4215 5.49434 11.5356 6.06093 11.5356 6.63327C11.5356 7.2056 11.4215 7.7722 11.2 8.29994C10.982 8.81127 10.6699 9.27712 10.28 9.67327C9.69541 10.2568 8.95578 10.6605 8.14877 10.8366C7.34175 11.0127 6.50117 10.9537 5.72666 10.6666L2.98 11.5199C2.93222 11.5331 2.88289 11.5399 2.83333 11.5399ZM7.22666 3.33327C6.7846 3.33198 6.34687 3.42044 5.94 3.59327C5.15177 3.92591 4.52163 4.5489 4.18 5.33327C4.00856 5.74174 3.92026 6.18028 3.92026 6.62327C3.92026 7.06626 4.00856 7.5048 4.18 7.91327C4.21971 8.02312 4.21971 8.14341 4.18 8.25327L3.56666 10.2533L5.56666 9.63994C5.67652 9.60022 5.79681 9.60022 5.90666 9.63994C6.71617 9.97613 7.62553 9.97993 8.43782 9.65052C9.25012 9.32111 9.89997 8.685 10.2467 7.87994C10.4417 7.38127 10.5138 6.84295 10.4568 6.31053C10.3998 5.77812 10.2153 5.26727 9.91904 4.82124C9.62278 4.3752 9.22342 4.00711 8.75476 3.7481C8.28611 3.48909 7.76195 3.3468 7.22666 3.33327Z" fill="white"/>
+                                    <path d="M13.1668 13.6667C13.1181 13.6732 13.0688 13.6732 13.0201 13.6667L10.2734 12.8334C9.24155 13.223 8.09907 13.1992 7.08429 12.767C6.06951 12.3347 5.26078 11.5274 4.82677 10.5134C4.79711 10.4534 4.78014 10.3879 4.77693 10.321C4.77372 10.2542 4.78433 10.1874 4.80811 10.1248C4.83188 10.0622 4.86831 10.0053 4.91511 9.9574C4.96191 9.90955 5.01808 9.87186 5.08011 9.84671C5.14043 9.81898 5.20566 9.80354 5.27201 9.80129C5.33836 9.79904 5.40449 9.81003 5.46655 9.83361C5.52861 9.8572 5.58534 9.8929 5.63346 9.93864C5.68157 9.98439 5.72009 10.0393 5.74677 10.1C5.90524 10.4777 6.13114 10.8233 6.41344 11.12C6.88088 11.5823 7.47459 11.8961 8.1199 12.0218C8.76521 12.1476 9.43329 12.0797 10.0401 11.8267C10.15 11.787 10.2703 11.787 10.3801 11.8267L12.3801 12.44L11.7668 10.44C11.7271 10.3302 11.7271 10.2099 11.7668 10.1C11.9396 9.69316 12.0281 9.25544 12.0268 8.81337C12.0284 8.37879 11.9437 7.94822 11.7778 7.54656C11.6119 7.1449 11.3679 6.78013 11.0601 6.47337C10.9252 6.30294 10.7758 6.14456 10.6134 6.00004C10.5552 5.96507 10.5046 5.91858 10.4649 5.86341C10.4252 5.80824 10.3971 5.74555 10.3825 5.67918C10.3678 5.6128 10.3668 5.54414 10.3796 5.47737C10.3924 5.4106 10.4186 5.34714 10.4567 5.29087C10.4948 5.23459 10.544 5.18667 10.6013 5.15005C10.6586 5.11343 10.7227 5.08887 10.7898 5.07788C10.8569 5.06688 10.9255 5.06968 10.9915 5.08609C11.0574 5.10251 11.1193 5.13221 11.1734 5.17337C11.4119 5.32731 11.6351 5.50367 11.8401 5.70004C12.2322 6.09444 12.5445 6.56072 12.7601 7.07337C12.9863 7.6045 13.102 8.1761 13.1001 8.75337C13.0987 9.26504 13.0085 9.77258 12.8334 10.2534L13.6668 13C13.6937 13.0761 13.7018 13.1576 13.6904 13.2375C13.6789 13.3175 13.6483 13.3934 13.6012 13.4589C13.554 13.5244 13.4917 13.5776 13.4195 13.6137C13.3473 13.6499 13.2675 13.6681 13.1868 13.6667H13.1668Z" fill="white"/>
+                                  </svg>
+                                  <span>5 comments</span>
+                            </div>
+                        </div>
+                        <div class="st-text-box">
+                            <p>In the fast-paced world of business, staying ahead of the curve is essential for growth and success. One of the most powerful tools at your disposal? Predictive analytics. In our latest blog post, we dive deep into the world of predictive analytics and how it can revolutionize the way you do business</p>
+
+                            <p class="mt-4">The Power of Data-Driven Insights <br>Imagine being able to anticipate customer behavior, forecast market trends, and optimize operations with precision. That's the promise of predictive analytics.</p>
+
+                            <p class="mt-4">et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehendermust explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete and expound the actual teachings of</p>
+
+                            <p class="mt-4">the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone </p>
+                        </div>
+                    </div>
+                    <div class="row st-blog-content-img">
+                        <div class="col-xl-6">
+                            <img src="assets/img/blog/blog1.jpg" class="img rounded" alt="">
+                        </div>
+                        <div class="col-xl-6">
+                            <img src="assets/img/blog/blog2.jpg" class="img rounded" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="st-sidebar__search">
+                        <form action="#" class="st-sidebar__search-form position-relative d-flex align-items-center">
+                            <input type="search" placeholder="Search">
+                            <button type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-1" width="19" height="27" viewBox="0 0 23 23" fill="none">
+                                <path d="M21.9203 18.4878L18.4362 15.0037L15.7564 13.8965C16.6487 12.6276 17.1267 11.1138 17.125 9.5625C17.125 5.39251 13.7325 2 9.5625 2C5.39251 2 2 5.39251 2 9.5625C2 13.7325 5.39251 17.125 9.5625 17.125C11.1273 17.1268 12.6536 16.6405 13.9289 15.7338L15.0332 18.4065L18.5172 21.8907C18.7406 22.1142 19.0059 22.2914 19.2978 22.4123C19.5898 22.5333 19.9027 22.5955 20.2187 22.5955C20.5347 22.5956 20.8476 22.5333 21.1395 22.4124C21.4315 22.2915 21.6968 22.1143 21.9202 21.8908C22.1437 21.6674 22.3209 21.4021 22.4418 21.1102C22.5628 20.8182 22.625 20.5053 22.625 20.1893C22.6251 19.8733 22.5628 19.5604 22.4419 19.2685C22.321 18.9765 22.1437 18.7112 21.9203 18.4878ZM3.375 9.5625C3.375 6.15078 6.15078 3.375 9.5625 3.375C12.9742 3.375 15.75 6.15078 15.75 9.5625C15.75 12.9742 12.9742 15.75 9.5625 15.75C6.15078 15.75 3.375 12.9742 3.375 9.5625ZM20.948 20.9185C20.7544 21.1116 20.4922 21.22 20.2187 21.22C19.9453 21.22 19.6831 21.1116 19.4895 20.9185L16.1993 17.6282L15.1726 15.1432L17.6578 16.1698L20.9481 19.46C21.1411 19.6536 21.2496 19.9159 21.2496 20.1893C21.2495 20.4627 21.1411 20.7249 20.948 20.9185Z" fill="white"/>
+                              </svg>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="st-sidebar__post">
+                        <h4>Recent post</h4>
+                        <div class="st-sidebar__post-single d-flex align-content-center">
+                            <div class="st-sidebar__post-img">
+                                <img src="assets/img/blog/blogPost/post1.jpg" alt="">
+                            </div>
+                            <div class="st-sidebar__post-content">
+                                <h5><a href="#">Your Business Safe Ensure High...</a></h5>
+                                <p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M16 1V15H0V1H3V0H4V1H12V0H13V1H16ZM1 2V4H15V2H13V3H12V2H4V3H3V2H1ZM15 14V5H1V14H15ZM11 7V12H10V8.20312C9.85938 8.27604 9.69792 8.34375 9.51562 8.40625C9.33333 8.46875 9.16146 8.5 9 8.5V7.5C9.0625 7.5 9.14323 7.48438 9.24219 7.45312C9.34115 7.42188 9.44271 7.38281 9.54688 7.33594C9.65104 7.28906 9.74479 7.23438 9.82812 7.17188C9.91146 7.10938 9.96875 7.05469 10 7.00781V7H11ZM8 8.5C8 8.70312 7.97135 8.88542 7.91406 9.04688C7.85677 9.20833 7.77604 9.35938 7.67188 9.5C7.56771 9.64062 7.45312 9.77344 7.32812 9.89844C7.20312 10.0234 7.07031 10.1432 6.92969 10.2578C6.78906 10.3724 6.65625 10.4922 6.53125 10.6172C6.40625 10.7422 6.28385 10.8698 6.16406 11H8V12H5V11.7188C5 11.6198 4.9974 11.5208 4.99219 11.4219C4.98698 11.3229 4.9974 11.224 5.02344 11.125C5.04948 11.026 5.07552 10.9323 5.10156 10.8438C5.15885 10.7031 5.24479 10.5651 5.35938 10.4297C5.47396 10.2943 5.60417 10.1562 5.75 10.0156C5.89583 9.875 6.03906 9.74219 6.17969 9.61719C6.32031 9.49219 6.45312 9.36458 6.57812 9.23438C6.70312 9.10417 6.80469 8.98177 6.88281 8.86719C6.96094 8.7526 7 8.63021 7 8.5C7 8.35938 6.95052 8.24219 6.85156 8.14844C6.7526 8.05469 6.63542 8.00521 6.5 8C6.38021 8 6.27604 8.03646 6.1875 8.10938C6.09896 8.18229 6.03906 8.27865 6.00781 8.39844L5.03125 8.19531C5.0625 8.02344 5.1224 7.86458 5.21094 7.71875C5.29948 7.57292 5.41406 7.44792 5.55469 7.34375C5.69531 7.23958 5.84375 7.15625 6 7.09375C6.15625 7.03125 6.32292 7 6.5 7C6.70833 7 6.90365 7.03906 7.08594 7.11719C7.26823 7.19531 7.42708 7.30208 7.5625 7.4375C7.69792 7.57292 7.80469 7.73177 7.88281 7.91406C7.96094 8.09635 8 8.29167 8 8.5Z" fill="white" fill-opacity="0.7"/>
+                                  </svg> 21 February 2023</p>
+                            </div>
+                        </div>
+                        <div class="st-sidebar__post-single d-flex align-content-center">
+                            <div class="st-sidebar__post-img">
+                                <img src="assets/img/blog/blogPost/post1.jpg" alt="">
+                            </div>
+                            <div class="st-sidebar__post-content">
+                                <h5><a href="#">Your Business Safe Ensure High...</a></h5>
+                                <p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M16 1V15H0V1H3V0H4V1H12V0H13V1H16ZM1 2V4H15V2H13V3H12V2H4V3H3V2H1ZM15 14V5H1V14H15ZM11 7V12H10V8.20312C9.85938 8.27604 9.69792 8.34375 9.51562 8.40625C9.33333 8.46875 9.16146 8.5 9 8.5V7.5C9.0625 7.5 9.14323 7.48438 9.24219 7.45312C9.34115 7.42188 9.44271 7.38281 9.54688 7.33594C9.65104 7.28906 9.74479 7.23438 9.82812 7.17188C9.91146 7.10938 9.96875 7.05469 10 7.00781V7H11ZM8 8.5C8 8.70312 7.97135 8.88542 7.91406 9.04688C7.85677 9.20833 7.77604 9.35938 7.67188 9.5C7.56771 9.64062 7.45312 9.77344 7.32812 9.89844C7.20312 10.0234 7.07031 10.1432 6.92969 10.2578C6.78906 10.3724 6.65625 10.4922 6.53125 10.6172C6.40625 10.7422 6.28385 10.8698 6.16406 11H8V12H5V11.7188C5 11.6198 4.9974 11.5208 4.99219 11.4219C4.98698 11.3229 4.9974 11.224 5.02344 11.125C5.04948 11.026 5.07552 10.9323 5.10156 10.8438C5.15885 10.7031 5.24479 10.5651 5.35938 10.4297C5.47396 10.2943 5.60417 10.1562 5.75 10.0156C5.89583 9.875 6.03906 9.74219 6.17969 9.61719C6.32031 9.49219 6.45312 9.36458 6.57812 9.23438C6.70312 9.10417 6.80469 8.98177 6.88281 8.86719C6.96094 8.7526 7 8.63021 7 8.5C7 8.35938 6.95052 8.24219 6.85156 8.14844C6.7526 8.05469 6.63542 8.00521 6.5 8C6.38021 8 6.27604 8.03646 6.1875 8.10938C6.09896 8.18229 6.03906 8.27865 6.00781 8.39844L5.03125 8.19531C5.0625 8.02344 5.1224 7.86458 5.21094 7.71875C5.29948 7.57292 5.41406 7.44792 5.55469 7.34375C5.69531 7.23958 5.84375 7.15625 6 7.09375C6.15625 7.03125 6.32292 7 6.5 7C6.70833 7 6.90365 7.03906 7.08594 7.11719C7.26823 7.19531 7.42708 7.30208 7.5625 7.4375C7.69792 7.57292 7.80469 7.73177 7.88281 7.91406C7.96094 8.09635 8 8.29167 8 8.5Z" fill="white" fill-opacity="0.7"/>
+                                  </svg> 21 February 2023</p>
+                            </div>
+                        </div>
+                        <div class="st-sidebar__post-single d-flex align-content-center">
+                            <div class="st-sidebar__post-img">
+                                <img src="assets/img/blog/blogPost/post1.jpg" alt="">
+                            </div>
+                            <div class="st-sidebar__post-content">
+                                <h5><a href="#">Your Business Safe Ensure High...</a></h5>
+                                <p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M16 1V15H0V1H3V0H4V1H12V0H13V1H16ZM1 2V4H15V2H13V3H12V2H4V3H3V2H1ZM15 14V5H1V14H15ZM11 7V12H10V8.20312C9.85938 8.27604 9.69792 8.34375 9.51562 8.40625C9.33333 8.46875 9.16146 8.5 9 8.5V7.5C9.0625 7.5 9.14323 7.48438 9.24219 7.45312C9.34115 7.42188 9.44271 7.38281 9.54688 7.33594C9.65104 7.28906 9.74479 7.23438 9.82812 7.17188C9.91146 7.10938 9.96875 7.05469 10 7.00781V7H11ZM8 8.5C8 8.70312 7.97135 8.88542 7.91406 9.04688C7.85677 9.20833 7.77604 9.35938 7.67188 9.5C7.56771 9.64062 7.45312 9.77344 7.32812 9.89844C7.20312 10.0234 7.07031 10.1432 6.92969 10.2578C6.78906 10.3724 6.65625 10.4922 6.53125 10.6172C6.40625 10.7422 6.28385 10.8698 6.16406 11H8V12H5V11.7188C5 11.6198 4.9974 11.5208 4.99219 11.4219C4.98698 11.3229 4.9974 11.224 5.02344 11.125C5.04948 11.026 5.07552 10.9323 5.10156 10.8438C5.15885 10.7031 5.24479 10.5651 5.35938 10.4297C5.47396 10.2943 5.60417 10.1562 5.75 10.0156C5.89583 9.875 6.03906 9.74219 6.17969 9.61719C6.32031 9.49219 6.45312 9.36458 6.57812 9.23438C6.70312 9.10417 6.80469 8.98177 6.88281 8.86719C6.96094 8.7526 7 8.63021 7 8.5C7 8.35938 6.95052 8.24219 6.85156 8.14844C6.7526 8.05469 6.63542 8.00521 6.5 8C6.38021 8 6.27604 8.03646 6.1875 8.10938C6.09896 8.18229 6.03906 8.27865 6.00781 8.39844L5.03125 8.19531C5.0625 8.02344 5.1224 7.86458 5.21094 7.71875C5.29948 7.57292 5.41406 7.44792 5.55469 7.34375C5.69531 7.23958 5.84375 7.15625 6 7.09375C6.15625 7.03125 6.32292 7 6.5 7C6.70833 7 6.90365 7.03906 7.08594 7.11719C7.26823 7.19531 7.42708 7.30208 7.5625 7.4375C7.69792 7.57292 7.80469 7.73177 7.88281 7.91406C7.96094 8.09635 8 8.29167 8 8.5Z" fill="white" fill-opacity="0.7"/>
+                                  </svg> 21 February 2023</p>
+                            </div>
+                        </div>
+                        <div class="st-sidebar__post-single d-flex align-content-center">
+                            <div class="st-sidebar__post-img">
+                                <img src="assets/img/blog/blogPost/post1.jpg" alt="">
+                            </div>
+                            <div class="st-sidebar__post-content">
+                                <h5><a href="#">Your Business Safe Ensure High...</a></h5>
+                                <p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M16 1V15H0V1H3V0H4V1H12V0H13V1H16ZM1 2V4H15V2H13V3H12V2H4V3H3V2H1ZM15 14V5H1V14H15ZM11 7V12H10V8.20312C9.85938 8.27604 9.69792 8.34375 9.51562 8.40625C9.33333 8.46875 9.16146 8.5 9 8.5V7.5C9.0625 7.5 9.14323 7.48438 9.24219 7.45312C9.34115 7.42188 9.44271 7.38281 9.54688 7.33594C9.65104 7.28906 9.74479 7.23438 9.82812 7.17188C9.91146 7.10938 9.96875 7.05469 10 7.00781V7H11ZM8 8.5C8 8.70312 7.97135 8.88542 7.91406 9.04688C7.85677 9.20833 7.77604 9.35938 7.67188 9.5C7.56771 9.64062 7.45312 9.77344 7.32812 9.89844C7.20312 10.0234 7.07031 10.1432 6.92969 10.2578C6.78906 10.3724 6.65625 10.4922 6.53125 10.6172C6.40625 10.7422 6.28385 10.8698 6.16406 11H8V12H5V11.7188C5 11.6198 4.9974 11.5208 4.99219 11.4219C4.98698 11.3229 4.9974 11.224 5.02344 11.125C5.04948 11.026 5.07552 10.9323 5.10156 10.8438C5.15885 10.7031 5.24479 10.5651 5.35938 10.4297C5.47396 10.2943 5.60417 10.1562 5.75 10.0156C5.89583 9.875 6.03906 9.74219 6.17969 9.61719C6.32031 9.49219 6.45312 9.36458 6.57812 9.23438C6.70312 9.10417 6.80469 8.98177 6.88281 8.86719C6.96094 8.7526 7 8.63021 7 8.5C7 8.35938 6.95052 8.24219 6.85156 8.14844C6.7526 8.05469 6.63542 8.00521 6.5 8C6.38021 8 6.27604 8.03646 6.1875 8.10938C6.09896 8.18229 6.03906 8.27865 6.00781 8.39844L5.03125 8.19531C5.0625 8.02344 5.1224 7.86458 5.21094 7.71875C5.29948 7.57292 5.41406 7.44792 5.55469 7.34375C5.69531 7.23958 5.84375 7.15625 6 7.09375C6.15625 7.03125 6.32292 7 6.5 7C6.70833 7 6.90365 7.03906 7.08594 7.11719C7.26823 7.19531 7.42708 7.30208 7.5625 7.4375C7.69792 7.57292 7.80469 7.73177 7.88281 7.91406C7.96094 8.09635 8 8.29167 8 8.5Z" fill="white" fill-opacity="0.7"/>
+                                  </svg> 21 February 2023</p>
+                            </div>
+                        </div>
+                        <div class="st-sidebar__post-single d-flex align-content-center">
+                            <div class="st-sidebar__post-img">
+                                <img src="assets/img/blog/blogPost/post1.jpg" alt="">
+                            </div>
+                            <div class="st-sidebar__post-content">
+                                <h5><a href="#">Your Business Safe Ensure High...</a></h5>
+                                <p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M16 1V15H0V1H3V0H4V1H12V0H13V1H16ZM1 2V4H15V2H13V3H12V2H4V3H3V2H1ZM15 14V5H1V14H15ZM11 7V12H10V8.20312C9.85938 8.27604 9.69792 8.34375 9.51562 8.40625C9.33333 8.46875 9.16146 8.5 9 8.5V7.5C9.0625 7.5 9.14323 7.48438 9.24219 7.45312C9.34115 7.42188 9.44271 7.38281 9.54688 7.33594C9.65104 7.28906 9.74479 7.23438 9.82812 7.17188C9.91146 7.10938 9.96875 7.05469 10 7.00781V7H11ZM8 8.5C8 8.70312 7.97135 8.88542 7.91406 9.04688C7.85677 9.20833 7.77604 9.35938 7.67188 9.5C7.56771 9.64062 7.45312 9.77344 7.32812 9.89844C7.20312 10.0234 7.07031 10.1432 6.92969 10.2578C6.78906 10.3724 6.65625 10.4922 6.53125 10.6172C6.40625 10.7422 6.28385 10.8698 6.16406 11H8V12H5V11.7188C5 11.6198 4.9974 11.5208 4.99219 11.4219C4.98698 11.3229 4.9974 11.224 5.02344 11.125C5.04948 11.026 5.07552 10.9323 5.10156 10.8438C5.15885 10.7031 5.24479 10.5651 5.35938 10.4297C5.47396 10.2943 5.60417 10.1562 5.75 10.0156C5.89583 9.875 6.03906 9.74219 6.17969 9.61719C6.32031 9.49219 6.45312 9.36458 6.57812 9.23438C6.70312 9.10417 6.80469 8.98177 6.88281 8.86719C6.96094 8.7526 7 8.63021 7 8.5C7 8.35938 6.95052 8.24219 6.85156 8.14844C6.7526 8.05469 6.63542 8.00521 6.5 8C6.38021 8 6.27604 8.03646 6.1875 8.10938C6.09896 8.18229 6.03906 8.27865 6.00781 8.39844L5.03125 8.19531C5.0625 8.02344 5.1224 7.86458 5.21094 7.71875C5.29948 7.57292 5.41406 7.44792 5.55469 7.34375C5.69531 7.23958 5.84375 7.15625 6 7.09375C6.15625 7.03125 6.32292 7 6.5 7C6.70833 7 6.90365 7.03906 7.08594 7.11719C7.26823 7.19531 7.42708 7.30208 7.5625 7.4375C7.69792 7.57292 7.80469 7.73177 7.88281 7.91406C7.96094 8.09635 8 8.29167 8 8.5Z" fill="white" fill-opacity="0.7"/>
+                                  </svg> 21 February 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="st-sidebar__post">
+                        <h4>Popular tag</h4>
+                        <div class="st-sidebar__tag align-content-center position-relative">
+                            <a href="#" class="st-btn">Software</a>
+                            <a href="#" class="st-btn">WEB</a>
+                            <a href="#" class="st-btn">Backup</a>
+                            <a href="#" class="st-btn">Design</a>
+                            <a href="#" class="st-btn">Service</a>
+                            <a href="#" class="st-btn">Data</a>
+                            <a href="#" class="st-btn">IT</a>
+                            <a href="#" class="st-btn">Programing</a>
+                            <a href="#" class="st-btn">Data</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==== Blog Area End ====-->
+    
+
+
+    <!--==== Comment Form Start ====-->
+    <div class="st-contact-form-area position-relative">
+        <div class="container">
+            <h2>Comments</h2>
+            <p>Your email address will not be published. Required fields are marked *</p>
+            <div class="row">
+                <div class="col-xl-10">
+                    <form action="#" method="#" class="st-contact-form">
+                        <div class="row gy-4">
+                          <div class="col-md-6">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                          </div>
+          
+                          <div class="col-md-6 ">
+                            <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                          </div>
+                          <div class="col-12">
+                            <textarea class="form-control" name="message" rows="6" placeholder="Your Message" required=""></textarea>
+                          </div>
+                          <div class="col-xl-2 mt-5"><a href="#" class="st-btn st-btn-2 st-contact-btn">Submit</a></div>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--==== Comment Form End ====-->
+
+    <!--==== Subscribe Area Start ====-->
+    <div class="st-subscribe position-relative">
+        <img src="assets/img/icon/python.png" class="st-blog-icon3 position-absolute" alt="">
+        <div class="container">
+            <div class="st-subscribe__content-box text-center">
+                <div class="st-subscribe__content position-relative z-2">
+                    <h2>Let’s Creat something great <br> together</h2>
+                    <a href="#" class="st-btn st-btn-2 st-contact-btn">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--==== Subscribe Area End ====-->
+
+    <!--==== Footer Area Start ====-->
+    <footer class="st-footer-area">
+        <div class="pt"></div>
+        <div class="container position-relative z-1">
+            <div class="st-footer__info">
+                <div class="row">
+                    <div class="col-xl-4 d-flex justify-content-center">
+                        <div class="st-footer__item d-flex align-items-center">
+                            <div class="st-footer__item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <path d="M33.35 25.6333C31.3 25.6333 29.3167 25.3 27.4667 24.7C27.1768 24.6018 26.8652 24.5872 26.5675 24.6579C26.2697 24.7287 25.998 24.8819 25.7833 25.1L23.1667 28.3833C18.45 26.1333 14.0333 21.8833 11.6833 17L14.9333 14.2333C15.3833 13.7667 15.5167 13.1167 15.3333 12.5333C14.7167 10.6833 14.4 8.7 14.4 6.65C14.4 5.75 13.65 5 12.75 5H6.98333C6.08333 5 5 5.4 5 6.65C5 22.1333 17.8833 35 33.35 35C34.5333 35 35 33.95 35 33.0333V27.2833C35 26.3833 34.25 25.6333 33.35 25.6333Z" fill="white"/>
+                                  </svg>
+                            </div>
+                            <div class="st-footer__item-desc">
+                                <h5>Phone number</h5>
+                                <span><a href="tel:1892736447">01892736447</a></span> 
+                                <span><a href="tel:1892736447">01892736447</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 d-flex justify-content-center">
+                        <div class="st-footer__item d-flex align-items-center">
+                            <div class="st-footer__item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <path d="M38.0005 29V11C38.0005 9.34 36.6605 8 35.0005 8H6.98047C5.32047 8 3.98047 9.34 3.98047 11V29C3.98047 30.66 5.32047 32 6.98047 32H35.0005C36.6605 32 38.0005 30.66 38.0005 29ZM35.3805 10.78C36.0405 11.44 35.6805 12.12 35.3205 12.46L27.2005 19.9L35.0005 28.02C35.2405 28.3 35.4005 28.74 35.1205 29.04C34.8605 29.36 34.2605 29.34 34.0005 29.14L25.2605 21.68L20.9805 25.58L16.7205 21.68L7.98047 29.14C7.72047 29.34 7.12047 29.36 6.86047 29.04C6.58047 28.74 6.74047 28.3 6.98047 28.02L14.7805 19.9L6.66047 12.46C6.30047 12.12 5.94047 11.44 6.60047 10.78C7.26047 10.12 7.94047 10.44 8.50047 10.92L20.9805 21L33.4805 10.92C34.0405 10.44 34.7205 10.12 35.3805 10.78Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="st-footer__item-desc">
+                                <h5>Email us here</h5>
+                                <span><a href="mailto:info@gmail.com">info@gmail.com</a></span> 
+                                <span><a href="mailto:info2@gmail.com">info2@gmail.com</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 d-flex justify-content-center">
+                        <div class="st-footer__item d-flex align-items-center">
+                            <div class="st-footer__item-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <path d="M19.9997 19.1663C18.8946 19.1663 17.8348 18.7274 17.0534 17.946C16.272 17.1646 15.833 16.1047 15.833 14.9997C15.833 13.8946 16.272 12.8348 17.0534 12.0534C17.8348 11.272 18.8946 10.833 19.9997 10.833C21.1047 10.833 22.1646 11.272 22.946 12.0534C23.7274 12.8348 24.1663 13.8946 24.1663 14.9997C24.1663 15.5468 24.0586 16.0887 23.8492 16.5942C23.6398 17.0997 23.3329 17.559 22.946 17.946C22.559 18.3329 22.0997 18.6398 21.5942 18.8492C21.0887 19.0586 20.5469 19.1663 19.9997 19.1663ZM19.9997 3.33301C16.9055 3.33301 13.938 4.56217 11.7501 6.7501C9.56217 8.93802 8.33301 11.9055 8.33301 14.9997C8.33301 23.7497 19.9997 36.6663 19.9997 36.6663C19.9997 36.6663 31.6663 23.7497 31.6663 14.9997C31.6663 11.9055 30.4372 8.93802 28.2493 6.7501C26.0613 4.56217 23.0939 3.33301 19.9997 3.33301Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="st-footer__item-desc">
+                                <h5>Office address</h5>
+                                <span>abc Town. New York</span> 
+                                <span>xyz road. silikon veli</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row st-footer-list">
+                <div class="col-xl-3">
+                    <div class="st-footer-logo">
+                        <a href="#"><img src="assets/img/logo/logo-white.png" alt=""></a>
+                    </div>
+                    <p class="st-logo-info">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut commodo consequat.</p>
+                    <div class="st-footer-socials">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                <path d="M22 12.9205C22 7.36388 17.5229 2.85938 12 2.85938C6.47715 2.85938 2 7.36388 2 12.9205C2 17.9422 5.65684 22.1046 10.4375 22.8594V15.8288H7.89844V12.9205H10.4375V10.7039C10.4375 8.18233 11.9305 6.78949 14.2146 6.78949C15.3088 6.78949 16.4531 6.986 16.4531 6.986V9.46198H15.1922C13.95 9.46198 13.5625 10.2376 13.5625 11.0333V12.9205H16.3359L15.8926 15.8288H13.5625V22.8594C18.3432 22.1046 22 17.9424 22 12.9205Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 3.85938H8C5.23858 3.85938 3 6.09795 3 8.85938V16.8594C3 19.6208 5.23858 21.8594 8 21.8594H16C18.7614 21.8594 21 19.6208 21 16.8594V8.85938C21 6.09795 18.7614 3.85938 16 3.85938ZM19.25 16.8594C19.2445 18.652 17.7926 20.1039 16 20.1094H8C6.20735 20.1039 4.75549 18.652 4.75 16.8594V8.85938C4.75549 7.06673 6.20735 5.61486 8 5.60938H16C17.7926 5.61486 19.2445 7.06673 19.25 8.85938V16.8594ZM16.75 9.10938C17.3023 9.10938 17.75 8.66165 17.75 8.10938C17.75 7.5571 17.3023 7.10938 16.75 7.10938C16.1977 7.10938 15.75 7.5571 15.75 8.10938C15.75 8.66165 16.1977 9.10938 16.75 9.10938ZM12 8.35938C9.51472 8.35938 7.5 10.3741 7.5 12.8594C7.5 15.3447 9.51472 17.3594 12 17.3594C14.4853 17.3594 16.5 15.3447 16.5 12.8594C16.5027 11.6651 16.0294 10.5189 15.1849 9.67445C14.3404 8.82996 13.1943 8.35672 12 8.35938ZM9.25 12.8594C9.25 14.3782 10.4812 15.6094 12 15.6094C13.5188 15.6094 14.75 14.3782 14.75 12.8594C14.75 11.3406 13.5188 10.1094 12 10.1094C10.4812 10.1094 9.25 11.3406 9.25 12.8594Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                <path d="M17.1761 4.85938H19.9362L13.9061 11.6368L21 20.8594H15.4456L11.0951 15.266L6.11723 20.8594H3.35544L9.80517 13.6102L3 4.85938H8.69545L12.6279 9.972L17.1761 4.85938ZM16.2073 19.2348H17.7368L7.86441 6.39865H6.2232L16.2073 19.2348Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 3.85938C3.67157 3.85938 3 4.53095 3 5.35938V20.3594C3 21.1878 3.67157 21.8594 4.5 21.8594H19.5C20.3284 21.8594 21 21.1878 21 20.3594V5.35938C21 4.53095 20.3284 3.85938 19.5 3.85938H4.5ZM8.52076 7.86209C8.52639 8.81835 7.81061 9.40757 6.96123 9.40335C6.16107 9.39913 5.46357 8.76209 5.46779 7.8635C5.47201 7.01834 6.13998 6.33913 7.00764 6.35882C7.88795 6.37851 8.52639 7.02397 8.52076 7.86209ZM12.2797 10.6211H9.75971H9.7583V19.181H12.4217V18.9813C12.4217 18.6014 12.4214 18.2214 12.4211 17.8413C12.4203 16.8275 12.4194 15.8126 12.4246 14.7991C12.426 14.553 12.4372 14.2971 12.5005 14.0622C12.7381 13.1847 13.5271 12.618 14.4074 12.7573C14.9727 12.8458 15.3467 13.1735 15.5042 13.7065C15.6013 14.0397 15.6449 14.3983 15.6491 14.7457C15.6605 15.7933 15.6589 16.8409 15.6573 17.8886C15.6567 18.2584 15.6561 18.6284 15.6561 18.9982V19.1796H18.328V18.9743C18.328 18.5223 18.3278 18.0704 18.3275 17.6185C18.327 16.489 18.3264 15.3595 18.3294 14.2296C18.3308 13.7191 18.276 13.2157 18.1508 12.7221C17.9638 11.988 17.5771 11.3805 16.9485 10.9418C16.5027 10.6296 16.0133 10.4285 15.4663 10.406C15.404 10.4034 15.3412 10.4 15.2781 10.3966C14.9984 10.3815 14.7141 10.3661 14.4467 10.42C13.6817 10.5733 13.0096 10.9235 12.5019 11.5408C12.4429 11.6116 12.3852 11.6835 12.2991 11.7908L12.2797 11.8151V10.6211ZM5.68164 19.1838H8.33242V10.6267H5.68164V19.1838Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                <path d="M21.5933 7.8202C21.4794 7.3976 21.2568 7.0122 20.9477 6.70236C20.6386 6.39253 20.2537 6.16906 19.8313 6.05419C18.2653 5.62419 12.0003 5.6172 12.0003 5.6172C12.0003 5.6172 5.73633 5.61019 4.16933 6.02119C3.74725 6.14134 3.36315 6.36797 3.0539 6.67933C2.74464 6.99069 2.52062 7.37632 2.40333 7.7992C1.99033 9.3652 1.98633 12.6132 1.98633 12.6132C1.98633 12.6132 1.98233 15.8772 2.39233 17.4272C2.62233 18.2842 3.29733 18.9612 4.15533 19.1922C5.73733 19.6222 11.9853 19.6292 11.9853 19.6292C11.9853 19.6292 18.2503 19.6362 19.8163 19.2262C20.2388 19.1115 20.6241 18.8886 20.934 18.5794C21.2439 18.2702 21.4677 17.8854 21.5833 17.4632C21.9973 15.8982 22.0003 12.6512 22.0003 12.6512C22.0003 12.6512 22.0203 9.3862 21.5933 7.8202ZM9.99633 15.6222L10.0013 9.6222L15.2083 12.6272L9.99633 15.6222Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-2">
+                    <div class="st-footer-widget st-footer-widget-1">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#">Meet our team</a></li>
+                            <li><a href="#">Our projects</a></li>
+                            <li><a href="#">What we do</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="st-footer-widget st-footer-widget-2">
+                        <h4>What we do</h4>
+                        <ul>
+                            <li><a href="#">UI/UX design & development</a></li>
+                            <li><a href="#">App design & development</a></li>
+                            <li><a href="#">Cyber security</a></li>
+                            <li><a href="#">IT consultant</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="st-footer-widget st-footer-widget-4">
+                        <h4>Instagram Posts</h4>
+                        <ul>
+                            <li><a href="#"><img src="assets/img/inst/inst1.png" alt=""></a></li>
+                            <li><a href="#"><img src="assets/img/inst/inst2.png" alt=""></a></li>
+                            <li><a href="#"><img src="assets/img/inst/inst3.png" alt=""></a></li>
+                            <li><a href="#"><img src="assets/img/inst/inst4.png" alt=""></a></li>
+                            <li><a href="#"><img src="assets/img/inst/inst5.png" alt=""></a></li>
+                            <li><a href="#"><img src="assets/img/inst/inst6.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="st-copyright-area d-flex justify-content-between align-items-center">
+                <span>2024 @All right reserved Square Tech IT.</span>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--==== Footer Area End ====-->
+    </main>
+    <footer></footer>
+    <script src="assets/js/bootstrap-min.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

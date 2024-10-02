@@ -27,6 +27,10 @@
     }
 }
 
+.img{
+    width: 100%;
+}
+
 ::placeholder {
     color: #fff;
     opacity: 1; /* Firefox */
