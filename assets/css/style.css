@@ -526,8 +526,17 @@ p {
         bottom: 37%;
         right: calc(12% - 16px);
     }
+    .st-blog-icon-data1{
+        left: 13%;
+        top: 57px;
+    }
+    .st-blog-icon-data2{
+        left: 10%;
+        bottom: 38%;
+    }
 
     .st-blog-content {
+        margin-bottom: 50px;
         .st-blog-img {
             img {
                 border-radius: 14.807px;
@@ -598,6 +607,14 @@ p {
 
     .st-blog-content-img {
         margin-top: 60px;
+    }
+
+    .st-blog-btn{
+        margin-top: 40px;
+        a{
+            font-size: 16px;
+            font-weight: 500;
+        }
     }
 
     .st-sidebar__search {
